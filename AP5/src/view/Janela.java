@@ -22,6 +22,7 @@ public class Janela extends JFrame implements ActionListener {
     private final ImageIcon imgDinossauro1;
     private final ImageIcon imgDinossauro2;
     private final ImageIcon imgDinossauro3;
+    private final ImageIcon pista;
 
     public Janela() {
         super();
@@ -33,9 +34,9 @@ public class Janela extends JFrame implements ActionListener {
         getContentPane().setBackground(Color.white);
        
         this.setTitle("Corrida de Threads");
-        // pista = new ImageIcon("./src/imagens/pista.png");
+        this.pista = new ImageIcon("./src/imagens/pista2.jpg");
 
-        this.lblPista = new JLabel();
+        this.lblPista = new JLabel(pista);
         // POSICIONANDO OS ELEMENTOS DO FORM
         this.lblPista.setBounds(0, 0, 1280, 650);
        
