@@ -1,5 +1,3 @@
-// limpar lista
-
 package poa.controle;
 
 import poa.dominio.Tarefa;

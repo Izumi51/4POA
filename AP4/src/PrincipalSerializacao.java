@@ -10,11 +10,11 @@ public class PrincipalSerializacao {
 	public static void main(String[] args) {
 		Cinema c = new Cinema("Vingadores", 344, 54, 39.99);
 		try {
-			File f = new File("c:/cinemaList/");
+			File f = new File("/home/alun23204708360001/Documentos/cinemaList/");
 			if(!f.exists()) {
 				f.mkdir();
 			}
-			FileOutputStream arqOSer = new FileOutputStream("c:/cinemaList/cinema.info");
+			FileOutputStream arqOSer = new FileOutputStream("/home/alun23204708360001/Documentos/cinemaList/cinema.info");
 			ObjectOutputStream oOSer = new ObjectOutputStream(arqOSer);
 			oOSer.writeObject(c);
 			oOSer.close();
@@ -23,7 +23,7 @@ public class PrincipalSerializacao {
 			c.setQuantidadeCadeiras(40);
 			System.out.println("\nDepois de alterar idade----------------------------");
 			System.out.println(c);
-			FileInputStream arqISer = new FileInputStream("c:/cinemaList/cinema.info");
+			FileInputStream arqISer = new FileInputStream("/home/alun23204708360001/Documentos/cinemaList/cinema.info");
 			ObjectInputStream iOSer = new ObjectInputStream(arqISer);
 			c = (Cinema) iOSer.readObject();
 			iOSer.close();
