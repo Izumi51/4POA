@@ -1,7 +1,5 @@
 package poa.dominio;
 
-import com.sun.source.tree.UsesTree;
-
 public class Tarefa {
 
     private String jogo;
